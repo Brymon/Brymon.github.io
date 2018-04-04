@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman!</title>
+</head>
+
+<body> 
+<h1>Hangman GAME</h1>
+	<script>
+	var words = ["rhythm", "buffalo", "absurd", "transplant", "whiskey", "beekeeper", "witchcraft", "genetics", "astrology" ];
+	var word = words[Math.floor(Math.random() * words.length)];
+	var answerArray = [];
+	for (i = 0; i < word.length; i++) {
+	answerArray[i] = "_";
+	}
+	var remainingLetters = word.length;
+	var lettersGuessed = [];
+	var guessesLeft = 12;
+	
+	var name = prompt("What's your name?");
+	alert("Hello " + name + "! LET'S PLAY A GAME!");
+	
+	while (remainingLetters > 0 && guessesLeft > 1 && answerArray.includes("_")) {
+	alert(answerArray.join(" "));
+	
+	var guess = prompt("Guess a letter, or click Cancel to stop playing.\nYou can make only " + guessesLeft + " mistakes.");
+	if (guess === null) {
+	alert("Oh, come on... It's easy!");
+	break;
+	} else if (guess.length !== 1) {
+	alert("Please enter a single letter.");
+	} else if (lettersGuessed.includes(guess)) {
+	alert("You've already tried this letter... \nHere are the letters you've already used: \n" + lettersGuessed.join(" "));
+	} else if (!word.includes(guess)) {
+	guessesLeft--;
+	lettersGuessed.push(guess.toLowerCase());
+	console.log(guessesLeft);
+	} else {
+	for (var j = 0; j < word.length; j++) {
+	if (word[j] === guess.toLowerCase()) {
+	answerArray[j] = guess.toLowerCase();
+	remainingLetters--;
+	} 
+	}
+	lettersGuessed.push(guess.toLowerCase());
+	console.log(guessesLeft);
+	}
+	}
+	if (guessesLeft == 1 && remainingLetters > 0) {
+	guess = prompt("This is your last chance. You must guess the word now.\n\n".toUpperCase() + answerArray.join(" "));
+		if (guess == word) {
+		alert("Great " + name + "! You guessed it! The word was: " + word + ".")
+		} else {
+		alert("You're a loser! \nRefresh the page to play again.");
+		}
+	}
+	if (!answerArray.includes("_")) {
+	alert("Great " + name + "! You guessed it! The word was: " + word + ".");
+	}
+	</script>
+</body>
+</html>
