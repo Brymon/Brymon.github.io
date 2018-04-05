@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Monika Flisowska</title>
 <meta charset="UTF-8"/>
@@ -7,22 +7,22 @@
 <meta name="keywords" content="Founders and Coders, London, junior web developer"/>
 <meta name="author" content="Monika Flisowska"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat"/>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat"/>
 <style type="text/css">
 
 html {
-  font-size: 16px;
+  	font-size: 16px;
 }
 @media screen and (min-width: 320px) {
-  html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
+  	html {
+    		font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  	}
 }
 @media screen and (min-width: 1000px) {
-  html {
-    font-size: 18px;
-  }
+  	html {
+    		font-size: 18px;
+  	}
 }
 body {
 	font-family: Lora, serif;
@@ -30,9 +30,9 @@ body {
 	height: 100%;
 }
 * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    	box-sizing: border-box;
+    	padding: 0px;
+    	margin: 0px;
 }
 #container {
 	min-height: 100%;
@@ -56,58 +56,52 @@ header h1 {
 	padding: 5%;
 }
 #hello h1 {
-	color: #031424;
+	color: white;
 	letter-spacing: 0.25em;
 	position: absolute;
 	top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    	left: 50%;
+    	transform: translate(-50%, -50%);
 }
 
 
  #hello h1 {
     color: white;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 2s;
     animation-name: example;
     animation-duration: 2s;
-    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-iteration-count: infinite;
 }
-
-
-/* Standard syntax */
 @keyframes example {
     0%   {color: white; opacity: 0;}
     25%  {color: #CF6766 ; opacity: 100;}
     50%  {color: white; opacity: 0;}
     100% {color: #CF6766 ; opacity: 100;}
 }
-
-
-
 #main p::first-letter { 
-    font-size: 150%;
-    color: #CF6766;
+    	font-size: 150%;
+    	color: #CF6766;
 }
 #icons a img:hover {
 	cursor: pointer;
-    background: #ffffff; 
+    	background: #ffffff; 
 }
 .circle img:hover {
 	border-radius: 50%;
 }
 
 #image {
-overflow: hidden;
+	overflow: hidden;
 	position: relative;
-    text-align: center;
+    	text-align: center;
 }
 
 #image img {
 	width: 50%;
-    height: auto;
-    opacity: 0.9;
-    float: left;
+    	height: auto;
+    	opacity: 0.9;
+    	float: left;
 }
 h5 {
 	font-family: Montserrat, serif;
@@ -133,10 +127,10 @@ a:active {
 	background-color: #031424; 
 	color: #8EAEBD;
 	width: 80%;
-    float: left;
-    padding: 3%;
-    margin: 2%;
-    margin-left: 0%;
+    	float: left;
+   	padding: 3%;
+    	margin: 2%;
+    	margin-left: 0%;
 }
 .italic {
 	font-style: italic;
@@ -146,10 +140,10 @@ a:active {
 	background-color: #8EAEBD;
 	color: #031424;
 	width: 100%;
-    float: right;
-    clear: left;
-    padding: 3%;
-    margin: 0;
+    	float: right;
+    	clear: left;
+    	padding: 3%;
+    	margin: 0;
 }   
 #icons {
 	height: 2em;
@@ -161,11 +155,11 @@ a:active {
 	background-color: #30415D; 
 	color: #b0becd;
 	width: 70%;
-    float: right;
-    clear: left;
-    padding: 3%;
-    margin: 2%;
-    margin-right: 0%;	
+    	float: right;
+    	clear: left;
+    	padding: 3%;
+    	margin: 2%;
+    	margin-right: 0%;	
 }	
 footer {
 	color: #30415D;
@@ -187,11 +181,9 @@ footer {
 <div id="container">
 <div id="main">
 <div id="image">
-
-<img src="images/robot.jpg">
-<img src="images/robot.jpg" style="transform: scaleX(-1);">
+<img src="images/robot.jpg" alt="picture of a modern robot">
+<img src="images/robot.jpg" style="transform: scaleX(-1);" alt="picture of a modern robot">
 <div id="hello"><h1>H E L L O</h1></div>
-
 </div>
 <div id="past">
 <h2>PAST</h2>
@@ -234,11 +226,11 @@ With a very clear set of prerequisites, it looked like a simple path. I've alrea
 and started with a fast repetition of all the material I previously learnt. And so here I am now: 
 </p>
 <div id="icons">
-<a class="circle" href="https://www.freecodecamp.org/brymon" target="_blank"><img src="images/freecodecamplogo.svg" height="100%"/></a>
-<a class="circle" href="https://www.codewars.com/users/Brymon" target="_blank"><img src="images/codewars.svg" height="100%"/></a> 
-<a class="circle" href="https://github.com/Brymon" target="_blank"><img src="images/github.svg" height="100%"/></a> 
-<a href="games/treasure.html" target="_blank"><img src="images/treasure.svg" height="100%"/></a> 
-<a href="games/myHangmanGame.html" target="_blank"><img src="images/hangman.svg" height="100%"/></a> 
+<a class="circle" href="https://www.freecodecamp.org/brymon" target="_blank"><img src="images/freecodecamplogo.svg" height="100%" alt="freecodecamp logo icon"/></a>
+<a class="circle" href="https://www.codewars.com/users/Brymon" target="_blank"><img src="images/codewars.svg" height="100%" alt="codewars logo icon"/></a> 
+<a class="circle" href="https://github.com/Brymon" target="_blank"><img src="images/github.svg" height="100%" alt="github logo icon"/></a> 
+<a href="games/treasure.html" target="_blank"><img src="images/treasure.svg" height="100%" alt="map icon"/></a> 
+<a href="games/myHangmanGame.html" target="_blank"><img src="images/hangman.svg" height="100%" alt="hangman icon"/></a> 
 </div>
 <p>Apart from the prerequisites, I worked with the book <span style="font-style: italic">JavaScript for Kids: A Playful Introduction to Programming</span> and created two games.
 I also made a <a href="https://codepen.io/MonBry/full/zZmNRx/" target="_blank">tribute</a> website for Sadegh Hedayat, one of my favourite writers. </p>
