@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <title>Monika Flisowska</title>
 <meta charset="UTF-8"/>
@@ -7,8 +7,8 @@
 <meta name="keywords" content="Founders and Coders, London, junior web developer"/>
 <meta name="author" content="Monika Flisowska"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat"/>
 <style type="text/css">
 
 html {
@@ -49,10 +49,42 @@ h2 {
 	letter-spacing: 0.5em;
 	padding-bottom: 0.5em;
 }
+
+
 header h1 {
 	color: #031424;
 	padding: 5%;
 }
+#hello h1 {
+	color: #031424;
+	letter-spacing: 0.25em;
+	position: absolute;
+	top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+ #hello h1 {
+    color: white;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count:infinite;
+}
+
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color: white; opacity: 0;}
+    25%  {color: #CF6766 ; opacity: 100;}
+    50%  {color: white; opacity: 0;}
+    100% {color: #CF6766 ; opacity: 100;}
+}
+
+
+
 #main p::first-letter { 
     font-size: 150%;
     color: #CF6766;
@@ -64,10 +96,17 @@ header h1 {
 .circle img:hover {
 	border-radius: 50%;
 }
+
+#image {
+overflow: hidden;
+	position: relative;
+    text-align: center;
+}
+
 #image img {
 	width: 50%;
     height: auto;
-    opacity: 0.6;
+    opacity: 0.9;
     float: left;
 }
 h5 {
@@ -144,12 +183,14 @@ footer {
 </style>
 </head>
 <body>
-<header><h1>HELLO, I'M MONIKA</h1></header>
+<header><h1>I'M MONIKA</h1></header>
 <div id="container">
 <div id="main">
-<div id="image" style="overflow: hidden">
-<img src="images/robot.jpg" alt="picture of a modern robot">
-<img src="images/robot.jpg" style="transform: scaleX(-1)" alt="picture of a modern robot">
+<div id="image">
+
+<img src="images/robot.jpg">
+<img src="images/robot.jpg" style="transform: scaleX(-1);">
+<div id="hello"><h1>H E L L O</h1></div>
 
 </div>
 <div id="past">
@@ -164,7 +205,8 @@ I came back to London looking for opportunities that would make use of both of m
 I had various freelance jobs in the media industry, and finished an internship in Venezuelan Embassy. 
 It didn't quite work for me because it wasn't challenging enough and I felt that this would get me exactly nowhere.  
 <br>
-In 2014 together with my partner, I went to Panama to make a <a href="https://www.dropbox.com/s/9a4vc8yitl3zx17/ngobe%20english.mp4?dl=0" target="_blank">documentary</a> about a native tribe, one that has their own language. 
+In 2014 together with my partner, I went to Panama to make a <a href="https://www.dropbox.com/s/9a4vc8yitl3zx17/ngobe%20english.mp4?dl=0" target="_blank">documentary</a> 
+about a native tribe, one that has their own language. 
 It was perfect: being able to visit a remote paradise-like place, teaching native kids how to use a camera, making a film that encourages fighting for human rights 
 and communicating with a freshly learnt foreign language, it was a great adventure and the documentary happened to be quite a success. 
 However, realising that making documentaries requires a considerate amount of investment and won't let me be financially independent in the long run, 
@@ -185,18 +227,18 @@ a demanding field, activity, or endeavour that requires exceptional skill and/or
 <div id="present">
 <h2>PRESENT</h2>
 <h5>You simply have to face the prospect of starting at the bottom and spending years learning how to do it.</h5>
-<p>Still working at the cinema, I used most of my free time researching best ways of how to learn coding. I gathered a lot of resources and started immediately. 
+<p>Still with the cinema, I used most of my free time researching best ways of how to learn coding. I gathered a lot of resources and started immediately. 
 It was going great, until I got overwhelmed with the possibilities, the amount of information, the different techniques, too many approaches, etc. 
 I knew that in order to make it work for me, I had to have some kind of a plan. I decided to start from the beginning and here's when I discovered Founders & Coders. 
 With a very clear set of prerequisites, it looked like a simple path. I've already reached the requested level on freecodecamp 
 and started with a fast repetition of all the material I previously learnt. And so here I am now: 
 </p>
 <div id="icons">
-<a class="circle" href="https://www.freecodecamp.org/brymon" target="_blank"><img src="images/freecodecamplogo.svg" height="100%" atl="freecodecamp logo icon"/></a>
-<a class="circle" href="https://www.codewars.com/users/Brymon" target="_blank"><img src="images/codewars.svg" height="100%" alt="codewars logo icon"/></a> 
-<a class="circle" href="https://github.com/Brymon" target="_blank"><img src="images/github.svg" height="100%" alt="github logo icon"/></a> 
-<a href="games/treasure.html" target="_blank"><img src="images/treasure.svg" height="100%" alt="treasure map icon"/></a> 
-<a href="games/myHangmanGame.html" target="_blank"><img src="images/hangman.svg" height="100%"alt="hangman icon"/></a> 
+<a class="circle" href="https://www.freecodecamp.org/brymon" target="_blank"><img src="images/freecodecamplogo.svg" height="100%"/></a>
+<a class="circle" href="https://www.codewars.com/users/Brymon" target="_blank"><img src="images/codewars.svg" height="100%"/></a> 
+<a class="circle" href="https://github.com/Brymon" target="_blank"><img src="images/github.svg" height="100%"/></a> 
+<a href="games/treasure.html" target="_blank"><img src="images/treasure.svg" height="100%"/></a> 
+<a href="games/myHangmanGame.html" target="_blank"><img src="images/hangman.svg" height="100%"/></a> 
 </div>
 <p>Apart from the prerequisites, I worked with the book <span style="font-style: italic">JavaScript for Kids: A Playful Introduction to Programming</span> and created two games.
 I also made a <a href="https://codepen.io/MonBry/full/zZmNRx/" target="_blank">tribute</a> website for Sadegh Hedayat, one of my favourite writers. </p>
