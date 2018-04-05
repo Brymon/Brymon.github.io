@@ -53,19 +53,46 @@ header h1 {
 	color: #031424;
 	padding: 5%;
 }
+#hello h1 {
+	color: #031424;
+	letter-spacing: 0.25em;
+	position: absolute;
+	top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ #hello h1 {
+    color: white;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count:infinite;
+}
+@keyframes example {
+    0%   {color: white; opacity: 0;}
+    25%  {color: #CF6766 ; opacity: 100;}
+    50%  {color: white; opacity: 0;}
+    100% {color: #CF6766 ; opacity: 100;}
+}
 #main p::first-letter { 
     font-size: 150%;
     color: #CF6766;
 }
 #icons a img:hover {
-	cursor: pointer;
+    cursor: pointer;
     background: #ffffff; 
 }
 .circle img:hover {
 	border-radius: 50%;
 }
+#image {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
 #image img {
-	width: 50%;
+    width: 50%;
     height: auto;
     opacity: 0.6;
     float: left;
@@ -144,13 +171,13 @@ footer {
 </style>
 </head>
 <body>
-<header><h1>HELLO, I'M MONIKA</h1></header>
+<header><h1>I'M MONIKA</h1></header>
 <div id="container">
 <div id="main">
 <div id="image" style="overflow: hidden">
 <img src="images/robot.jpg" alt="picture of a modern robot">
 <img src="images/robot.jpg" style="transform: scaleX(-1)" alt="picture of a modern robot">
-
+<div id="hello"><h1>H E L L O</h1></div>
 </div>
 <div id="past">
 <h2>PAST</h2>
