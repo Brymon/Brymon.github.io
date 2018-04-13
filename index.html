@@ -11,19 +11,6 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
 <style type="text/css">
 
-@font-face {
-    font-family: 'Lora';
-    src: url("https://fonts.googleapis.com/css?family=Lora");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Lora';
-    src: url("https://fonts.googleapis.com/css?family=Lora");
-    font-weight: 700;
-    font-style: normal;
-}
-
 html {
   	font-size: 16px;
 }
@@ -39,7 +26,6 @@ html {
 }
 body {
 	font-family: Lora, serif;
-	font-weight: 300;
 	background-color: #CF6766;
 	height: 100%;
 }
@@ -124,6 +110,11 @@ header h1 {
 	padding-bottom: 1.5em;
 	font-size: 80%;
 }
+
+
+
+
+
 a:link {
 	color: #ffffff;
 	text-decoration: none;
@@ -133,10 +124,24 @@ a:visited {
 	text-decoration: none;
 }
 a:hover {
-	font-weight: 700;
+	border-bottom: 2px solid white;
 }
 a:active {
 }
+
+#past a:before {
+	visibility: hidden;
+	border-radius: 2px;
+	transform: scaleX(0);
+	transition: 0.25s, linear;
+}
+#past a:hover:before,
+#past a:focus:before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+
 #past  {
 	background-color: #081d32; 
 	color: #a1b3c3;
